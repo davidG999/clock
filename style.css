@@ -39,18 +39,9 @@ body {
   font-size : 1.5rem;
 }
 
-.number {
-  position  : absolute;
-  width     : 100%;
-  height    : 100%;
-  text-align: center;
-  font-size : 1.4rem;
-
-
-  --rotation: 0;
-
-  /* transform: rotate(var(--rotation)); */
-
+.reverse {
+  --reverse: 0;
+  transform: rotate(var(--reverse));
 }
 
 
@@ -98,12 +89,58 @@ body {
   --rotation: 330deg;
 }
 
-.clock .hand {
-  --rotation: 0;
-  position  : absolute;
-  bottom    : 50%;
-  left      : 50%;
 
+/* reverse the upside down numbers */
+.number1 div {
+  --reverse: -30deg
+}
+
+.number2 div {
+  --reverse: -60deg
+}
+
+.number3 div {
+  --reverse: -90deg
+}
+
+.number4 div {
+  --reverse: -120deg
+}
+
+.number5 div {
+  --reverse: -150deg
+}
+
+.number6 div {
+  --reverse: -180deg
+}
+
+.number7 div {
+  --reverse: -210deg
+}
+
+.number8 div {
+  --reverse: -240deg
+}
+
+.number9 div {
+  --reverse: -270deg
+}
+
+.number10 div {
+  --reverse: -300deg
+}
+
+.number11 div {
+  --reverse: -330deg
+}
+
+
+.clock .hand {
+  --rotation             : 0;
+  position               : absolute;
+  bottom                 : 50%;
+  left                   : 50%;
   background-color       : #000;
   border                 : 1px solid #2f3542;
   border-top-left-radius : 10px;
