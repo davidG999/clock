@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #1e272e;
+  background-color: rgba(30, 39, 46, 1);
   display         : flex;
   justify-content : center;
   align-items     : center;
@@ -22,15 +22,26 @@ body {
   width          : 300px;
   height         : 300px;
   border-radius  : 50%;
-  border         : 1px solid #333;
   position       : relative;
   background-size: cover;
   border-radius  : 50%;
   box-shadow     : 0 -15px 15px rgba(255, 255, 255, 0.05),
     inset 0 -15px 15px rgba(255, 255, 255, 0.05),
-    0 15px 15px rgba(0, 0, 0, 0.3),
+    0 15px 25px rgba(0, 0, 0, 0.3),
     inset 0 15px 15px rgba(0, 0, 0, 0.3);
   background-color: #1e272e;
+
+  transition: all .3s ease;
+}
+
+.clock:hover {
+  transform: scale(1.10);
+
+  box-shadow: 0 0 40px rgba(230, 230, 255, 0.3),
+    inset 0 -15px 15px rgba(255, 255, 255, 0.02),
+    0 15px 25px rgba(0, 0, 0, 0.5),
+    inset 0 15px 15px rgba(0, 0, 0, 0.3);
+  background-color: rgb(30, 40, 55);
 }
 
 .clock .number {
@@ -171,16 +182,19 @@ body {
   width           : 4px;
   height          : 35%;
   background-color: #fd79a8;
+  transition      : all 1s linear;
 }
 
 .clock .hand.minute {
   width           : 7px;
   height          : 30%;
   background-color: #d2dae2;
+  transition      : all 1s linear;
 }
 
 .clock .hand.hour {
   width           : 10px;
   height          : 25%;
   background-color: #f53b57;
+  transition      : all 1s linear;
 }
